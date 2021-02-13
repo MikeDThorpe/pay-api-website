@@ -1,0 +1,90 @@
+header {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header nav, header button {
+    display: none;
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-right: 60px;
+}
+.hamburger {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/shared/mobile/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mobile-nav {
+    display: none;
+    height: 100vh;
+    width: 75%;
+    padding: 0px 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--mirage-blue);
+}
+#nav-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.mobile-nav nav {
+    margin-top: 90px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(112,112,112);
+}
+.mobile-nav nav li {
+    margin-bottom: 60px;
+    color: #fff;
+}
+@media screen and (min-width: 768px) {
+    header nav, header button {
+        display: block;
+    }
+    .hamburger {
+        display: none;
+    }
+    header ul {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header ul li {
+        color: var(--san-juan-blue);
+    }
+}
+@media screen and (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+@media screen and (min-width: 1000px) {
+    header {
+        padding-right: 125px;
+        padding-left: 125px;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1440px) {
+
+}

@@ -1,0 +1,34 @@
+/* colour scheme */
+:root {
+    --dark-pink: rgb(186,66,112);
+    --water-white: rgb(251,252,254);
+    --san-juan-blue: rgb(54,83,107);
+    --mirage-blue: rgb(27,38,47);
+    --charm-pink: rgb(218, 109, 151);
+    --light-san-juan-blue: rgb(108, 130, 148);
+    --body-blue: rgb(237,243,248)
+}
+button {
+    width: 175px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.button-primary {
+    background-color: var(--dark-pink);
+    color: white;
+}
+.button-primary:hover {
+    background-color: var(--charm-pink);
+}
+.button-secondary {
+    background-color: transparent;
+    color: var(--water-white);
+    border: 2px solid var(--water-white);
+}
+.button-secondary:hover {
+    background-color: var(--water-white);
+    color: var(--mirage-blue);
+    font-weight: 400;
+}

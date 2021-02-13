@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" /> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Frontend Mentor | PayAPI Website Challenge</title>
+  </head>
+  <body>
+    <section class="global-section">
+      <!-- header navigation -->
+      <header>
+          <div>
+            <a href="index.html"><img class="logo" src="./assets/shared/desktop/logo.svg" alt=""></a>
+            <nav>
+              <ul>
+                <a href="pricing.html">
+                  <li>Pricing</li>
+                </a>
+                <a href="about.html">
+                  <li>About</li>
+                </a>
+                <a href="contact.html">
+                  <li>Contact</li>
+                </a>
+              </ul>
+            </nav>
+          </div>
+          <button class="button-primary">Schedule a demo</button>
+          <div onclick="openNavBar()" class="hamburger"></div>
+      </header>
+      <!-- mobile navigation -->
+      <section class="mobile-nav">
+          <img onclick="closeNavBar()" id="nav-close" src="/assets/shared/mobile/close.svg" alt="">
+          <nav>
+            <ul>
+              <a href="pricing.html">
+                <li>Pricing</li>
+              </a>
+              <a href="about.html">
+                <li>About</li>
+              </a>
+              <a href="contact.html">
+                <li>Contact</li>
+              </a>
+            </ul>  
+            <button class="button-primary">Schedule a demo</button>
+          </nav>
+      </section>
+
+      <h1 class="container page-header text-blue">
+        Pricing
+      </h1>
+      <!-- pricing section -->
+      <section class="container pricing-section">
+        <!-- free plan -->
+        <article class="pricing-column">
+          <h3 class="text-dark-pink">
+            Free Plan
+          </h3>
+          <p class="font-margin text-light-blue">Build and test using our set of products with up to 100 API requests per minute.</p>
+          <p class="pricing text-blue">£0.00</p>
+          <table class="pricing-table">
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Transactions</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Auth</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Identity</p>
+                </th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>
+                  <p class="text-light-blue">Investments</p>
+                </th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>
+                  <p class="text-light-blue">Assets</p>
+                </th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>
+                  <p class="text-light-blue">Liabilities</p>
+                </th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>
+                  <p class="text-light-blue">Income</p>
+                </th>
+              </tr>
+          </table>
+          <button class="button-primary">Request Access</button>
+        </article>
+        <!-- basic plan -->
+        <article class="pricing-column">
+          <h3 class="text-dark-pink">
+            Basic Plan
+          </h3>
+          <p class="font-margin text-light-blue">Launch your project with unlimited requests and no contractual minimums.</p>
+          <p class="pricing text-blue">£249.00</p>
+          <table class="pricing-table">
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Transactions</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Auth</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Identity</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Investments</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Assets</p>
+                </th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>
+                  <p class="text-light-blue">Liabilities</p>
+                </th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>
+                  <p class="text-light-blue">Income</p>
+                </th>
+              </tr>
+          </table>
+          <button class="button-primary">Request Access</button>
+        </article>
+        <!-- premium plan -->
+        <article class="pricing-column">
+          <h3 class="text-dark-pink">
+            Premium Plan
+          </h3>
+          <p class="font-margin text-light-blue">Build and test using our set of products with up to 100 API requests per minute.</p>
+          <p class="pricing text-blue">£499.00</p>
+          <table class="pricing-table">
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Transactions</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Auth</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Identity</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Investments</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Assets</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Liabilities</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                </th>
+                <th>
+                  <p>Income</p>
+                </th>
+              </tr>
+          </table>
+          <button class="button-primary">Request Access</button>
+        </article>
+      </section>
+      <!-- pricing section -->
+      <!-- email signup -->
+      <section class="email-signup-section container">
+          <h2 class="text-blue">Ready to start?</h2>
+          <div class="email-input">
+            <input type="email" placeholder="Enter email address" id="email" name="email">
+            <button class="button-primary">Schedule a demo</button>
+          </div>
+      </section>
+    </section>
+    <!-- footer -->
+    <footer>
+      <section class="footer-section container">
+        <a href="index.html"><img src="./assets/shared/desktop/footer-logo.svg" alt=""></a>
+        <nav>
+          <ul>
+            <a href="pricing.html">
+              <li class="text-water-white">Pricing</li>
+            </a>
+            <a href="pricing.html">
+              <li class="text-water-white">About</li>
+            </a>
+            <a href="contact.html">
+              <li class="text-water-white">Contact</li>
+            </a>
+          </ul>
+        </nav>
+        <div class="footer-social-icons">
+          <img src="./assets/shared/desktop/facebook.svg" alt="facebook logo">
+          <img src="./assets/shared/desktop/twitter.svg" alt="twitter logo">
+          <img src="./assets/shared/desktop/linkedin.svg" alt="linkedin logo">
+        </div>
+      </section>
+      <svg width="780" height="780" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="390" cy="390" r="390"/><circle id="b" cx="390" cy="390" r="390"/></defs><g fill="#36536B" fill-rule="evenodd" opacity=".15"><use xlink:href="#a"/><use xlink:href="#b"/></g></svg>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+    <!-- Pricing
+    About
+    Contact
+    Schedule a Demo
+
+    Pricing
+
+    Free Plan
+    Build and test using our core set of products with up to 100 API requests
+    $0.00
+    
+    Transactions
+    Auth
+    Identity
+    Investments
+    Assets
+    Liabilities
+    Income
+    Request Access
+
+    Basic Plan
+    Launch your project with unlimited requests and no contractual minimums
+    $249.00
+    
+    Transactions
+    Auth
+    Identity
+    Investments
+    Assets
+    Liabilities
+    Income
+    Request Access
+
+    Premium Plan
+    Get tailored solutions, volume pricing, and dedicated support for your team
+    $499.00
+    
+    Transactions
+    Auth
+    Identity
+    Investments
+    Assets
+    Liabilities
+    Income
+    Request Access
+
+    Ready to start? 
+    Enter email address 
+    Schedule a Demo
+
+    Pricing
+    About
+    Contact -->

@@ -1,0 +1,74 @@
+h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', serif;
+}
+p, a, li, ul, button {
+    font-family: 'Public Sans', sans-serif;
+}
+h1 {
+    font-size: 1.875rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+p {
+    font-size: 0.94rem;
+    line-height: 1.7;
+}
+a:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+.text-blue {
+    color: var(--san-juan-blue);
+}
+.text-mirage-blue {
+    color: var(--mirage-blue)
+}
+.text-light-blue {
+    color: var(--light-san-juan-blue);
+}
+.text-water-white {
+    color: var(--water-white)
+}
+.text-dark-pink {
+    color: var(--dark-pink)
+}
+.text-center {
+    text-align: center;
+}
+input::placeholder {
+    color: rgba(54,83,107,0.5);
+    font-size: 15px;
+}
+.page-header {
+    margin: 65px 0px;
+    text-align: center;
+}
+.pricing {
+    font-size: 1.875rem
+}
+.font-margin {
+    margin: 15px 0px
+}
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    .pricing {
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+    p {
+        font-size: 1.1rem;
+    }
+}
