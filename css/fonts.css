@@ -44,7 +44,7 @@ input::placeholder {
     font-size: 15px;
 }
 .page-header {
-    margin: 65px 0px;
+    margin: 75px 0px;
     text-align: center;
 }
 .pricing {
@@ -52,6 +52,9 @@ input::placeholder {
 }
 .font-margin {
     margin: 15px 0px
+}
+.statistic {
+    font-size: 3.5rem;
 }
 @media screen and (min-width: 768px) {
     h1 {
@@ -70,5 +73,8 @@ input::placeholder {
 @media screen and (min-width: 1000px) {
     p {
         font-size: 1.1rem;
+    }
+    .page-header {
+        text-align: left;
     }
 }

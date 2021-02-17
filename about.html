@@ -5,58 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
 
   <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
-
-    We empower innovators by delivering access to the financial system
-
-    Our Vision
-
-    Our main goal is to build beautiful consumer experiences along with developer-friendly 
-    infrastructure. The result is an intelligent tool that gives everyone the ability to create 
-    amazing products that solve big problems. We are deeply focused on democratizing financial 
-    services through technology.
-
-    Our Business
-
-    At the core of our platform is the technical infrastructure APIs that connect consumers. 
-    Our innovative product provides key insights for businesses and individuals, as well as 
-    robust reporting for traditional financial institutions and developers.
-
-    Team Members 
-    300+
-
-    Offices in the US 
-    3
-
-    Transactions analyzed 
-    10M+
-
-    The Culture
-
-    We strongly believe there's always an opportunity to learn from each other outside of 
-    day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
-    We always value cross-team collaboration and diversity of thought, no matter the job title.
-
-    The People
-    
-    We're all passionate about building a more efficient and inclusive financial infrastructure 
-    together. At PayAPI, we have diverse backgrounds and skills.
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
-    Pricing
-    About
-    Contact
+    <section class="global-section">
+      <!-- header navigation -->
+      <header>
+          <div>
+            <a href="index.html"><img class="logo" src="./assets/shared/desktop/logo.svg" alt=""></a>
+            <nav>
+              <ul>
+                <a href="pricing.html">
+                  <li>Pricing</li>
+                </a>
+                <a href="about.html">
+                  <li>About</li>
+                </a>
+                <a href="contact.html">
+                  <li>Contact</li>
+                </a>
+              </ul>
+            </nav>
+          </div>
+          <button class="button-primary">Schedule a demo</button>
+          <div onclick="openNavBar()" class="hamburger"></div>
+      </header>
+      <!-- mobile navigation -->
+      <section class="mobile-nav">
+          <img onclick="closeNavBar()" id="nav-close" src="./assets/shared/mobile/close.svg" alt="">
+          <nav>
+            <ul>
+              <a href="pricing.html">
+                <li>Pricing</li>
+              </a>
+              <a href="about.html">
+                <li>About</li>
+              </a>
+              <a href="contact.html">
+                <li>Contact</li>
+              </a>
+            </ul>  
+            <button class="button-primary">Schedule a demo</button>
+          </nav>
+      </section>
+      <h1 class="container page-header text-blue">
+        We empower innovators with easy access to financial markets
+      </h1>
+      <!-- values section -->
+      <section class="container">
+        <article class="vision-container">
+          <h2 class="text-blue">Our Vision</h3>
+          <p class="text-light-blue">
+            Our main goal is to build beautiful consumer experiences along with developer-friendly 
+            infrastructure. The result is an intelligent tool that gives everyone the ability to create 
+            amazing products that solve big problems. We are deeply focused on democratizing financial 
+            services through technology.
+          </p>
+        </article>
+        <article class="vision-container">
+          <h2 class="text-blue">Our Business</h3>
+          <p class="text-light-blue">
+            At the core of our platform is the technical infrastructure APIs that connect consumers. 
+            Our innovative product provides key insights for businesses and individuals, as well as 
+            robust reporting for traditional financial institutions and developers.        
+          </p>
+        </article>
+      </section>
+    </section>
+      <img class="hide-on-tablet" width="100%" src="./assets/about/mobile/image-team-members.jpg" alt="">
+      <img class="hide-on-mobile show-on-tablet hide-on-desktop" width="100%" src="./assets/about/tablet/image-team-members.jpg" alt="">
+      <img class="hide-on-mobile display-on-desktop" width="100%" src="./assets/about/desktop/image-team-members.jpg" alt="">
+    <section class="global-section">
+      <section class="company-stats-container">
+        <div>
+          <p class="text-light-blue">Team Members</p>
+        <p class="text-dark-pink statistic">300+</p>
+      </div>
+      <div>
+        <p class="text-light-blue">UK Offices</p>
+        <p class="text-dark-pink statistic">3</p>
+      </div>
+      <div>
+        <p class="text-light-blue">Analysed Transactions</p>
+        <p class="text-dark-pink statistic">10M +</p>
+      </div>
+      </section>
+      <section class="container">
+        <article class="vision-container">
+          <h2 class="text-blue">The Culture</h3>
+          <p class="text-light-blue">
+            We strongly believe there's always an opportunity to learn from each other outside of 
+            day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
+            We always value cross-team collaboration and diversity of thought, no matter the job title.
+        
+          </p>
+        </article>
+        <article class="vision-container">
+          <h2 class="text-blue">The People</h3>
+          <p class="text-light-blue">
+            We're all passionate about building a more efficient and inclusive financial infrastructure 
+            together. At PayAPI, we have diverse backgrounds and skills.
+          </p>
+        </article>
+      </section>
+      <section class="email-signup-section container">
+        <h2 class="text-blue">Ready to start?</h2>
+        <div class="email-input">
+          <input type="email" placeholder="Enter email address" id="email" name="email">
+          <button class="button-primary">Schedule a demo</button>
+        </div>
+    </section>
+    </section>
+    <footer>
+      <section class="footer-section container">
+        <a href="index.html"><img src="./assets/shared/desktop/footer-logo.svg" alt=""></a>
+        <nav>
+          <ul>
+            <a href="pricing.html">
+              <li class="text-water-white">Pricing</li>
+            </a>
+            <a href="pricing.html">
+              <li class="text-water-white">About</li>
+            </a>
+            <a href="contact.html">
+              <li class="text-water-white">Contact</li>
+            </a>
+          </ul>
+        </nav>
+        <div class="footer-social-icons">
+          <img src="./assets/shared/desktop/facebook.svg" alt="facebook logo">
+          <img src="./assets/shared/desktop/twitter.svg" alt="twitter logo">
+          <img src="./assets/shared/desktop/linkedin.svg" alt="linkedin logo">
+        </div>
+      </section>
+      <svg width="780" height="780" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="390" cy="390" r="390"/><circle id="b" cx="390" cy="390" r="390"/></defs><g fill="#36536B" fill-rule="evenodd" opacity=".15"><use xlink:href="#a"/><use xlink:href="#b"/></g></svg>
+    </footer> 
   </body>
-
 </html>
