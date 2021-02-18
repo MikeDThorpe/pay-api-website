@@ -17,12 +17,10 @@ body {
     position: relative;
     overflow: hidden;
 }
-#index-svg-circle {
+.global-svg-circle {
     position: absolute;
-    z-index: 0;
-    top: -12%;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 0px;
+    top: -500px;
 }
 .hero-section {
     width: 100%;
@@ -75,11 +73,15 @@ body {
 }
 .info-section h2 {
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
 }
 .info-section p {
     margin: 0 auto;
     width: 75%;
+    position: relative;
     margin-bottom: 40px;
+    z-index: 1;
 }
 .icons-grid {
     margin-bottom: 60px;
@@ -88,9 +90,11 @@ body {
     row-gap: 40px;
     align-items: center;
     justify-items: center;
+    z-index: 5;
 }
 #info-section-svg {
     position: absolute;
+    z-index: 0;
     right: 50%;
     transform: translateX(50%);
     bottom: 60%;
@@ -258,10 +262,6 @@ body {
     .container {
         padding-left: 125px;
         padding-right: 125px;
-    }
-    #index-svg-circle {
-        top: -200px;
-        left: 80%;
     }
     .hero-section {
         flex-direction: row;
