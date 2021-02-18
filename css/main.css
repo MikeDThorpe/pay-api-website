@@ -94,6 +94,14 @@ body {
     bottom: 70%;
     left: -50%;
 }
+.svg-white {
+    fill: #fff;
+    background-color: #fff;
+}
+.svg-blue {
+    fill: #36536B;
+    background-color: #36536B;
+}
 .product-info {
     width: 100%;
     padding-top: 75px;
@@ -173,9 +181,20 @@ body {
     border-top: 2px solid var(--san-juan-blue);
     border-bottom: 2px solid var(--san-juan-blue);
 }
-
-
-
+.form-icon-block {
+    margin: 75px 0px;
+}
+.form-icon-block h3 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.form-icons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    align-items: center;
+    justify-items: center;
+}
 @media screen and (min-width: 768px) {
     .hide-on-tablet {
         display: none;
@@ -219,6 +238,9 @@ body {
     .company-stats-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    .form-icons-grid {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media screen and (min-width: 1000px) {
@@ -296,5 +318,11 @@ body {
         margin-bottom: 0px;
         column-gap: 35px;
         order: 2;
+    }
+    .contact-form-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        align-items: center;
     }
 }
