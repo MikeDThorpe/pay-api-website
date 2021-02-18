@@ -13,7 +13,7 @@ h2 {
 h3 {
     font-size: 1.4rem;
 }
-p {
+p, ::placeholder {
     font-size: 0.94rem;
     line-height: 1.7;
 }
