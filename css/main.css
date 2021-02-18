@@ -91,8 +91,13 @@ body {
 }
 #info-section-svg {
     position: absolute;
-    bottom: 70%;
-    left: -50%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 60%;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
 }
 .svg-white {
     fill: #fff;
@@ -268,6 +273,15 @@ body {
     .hero-content {
         text-align: left;
     }
+    #info-section-svg {
+        bottom: 30%;
+        left: -25%x;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
     .product-info-section {
         display: flex;
         align-items: center;
