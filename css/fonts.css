@@ -1,7 +1,7 @@
 h1, h2, h3, h4 {
     font-family: 'DM Serif Display', serif;
 }
-p, a, li, ul, button {
+p, a, li, ul, button, ::placeholder {
     font-family: 'Public Sans', sans-serif;
 }
 h1 {
