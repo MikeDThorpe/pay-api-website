@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
-
   <body>
     <section class="global-section">
       <svg class="global-svg-circle" width="780" height="780" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="390" cy="390" r="390"/><circle id="b" cx="390" cy="390" r="390"/></defs><g fill="#36536B" fill-rule="evenodd" opacity=".15"><use xlink:href="#a"/><use xlink:href="#b"/></g></svg>
@@ -62,11 +60,23 @@
         Submit a help request and we'll be in touch soon
       </h1>
       <section class="container contact-form-section">
-        <form class="contact-form" method="POST" action="/">
-          <input type="text" name="name" id="name" placeholder="Name" />
-          <input type="text" name="email" id="email" placeholder="Email Address" />
-          <input type="text" name="company" id="company" placeholder="Company" />
-          <input type="text" name="title" id="title" placeholder="Title" />
+        <form name="contact-form" class="contact-form" method="POST" action="/">
+          <div>
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <div class="error"></div>
+          </div>
+          <div>
+            <input type="text" name="email" id="email" placeholder="Email Address" />
+            <div class="error"></div>
+          </div>
+          <div>
+            <input type="text" name="company" id="company" placeholder="Company" />
+            <div class="error"></div>
+          </div>
+          <div>
+            <input type="text" name="title" id="title" placeholder="Title" />
+            <div class="error"></div>
+          </div>
           <textarea id="message" name="message" rows="5" placeholder="Message"></textarea>
           <div class="form-checkbox">
             <input type="checkbox" id="marketing" name="marketing" />

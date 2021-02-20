@@ -1,6 +1,14 @@
 .contact-form {
     width: 100%;
 }
+.error {
+    padding: 10px 20px;
+    font-family: 'Public Sans', sans-serif;
+    color: #FF0000;
+}
+.ph-error::-webkit-input-placeholder {
+    color: #ff0000;
+}
 .contact-form input[type="text"], textarea {
     width: 100%;
     box-sizing: border-box;
