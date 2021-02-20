@@ -13,9 +13,9 @@ function closeNavBar() {
 let contactForm = document.forms["contact-form"]
 let formInputs = contactForm.getElementsByTagName("input")
 contactForm.addEventListener("submit", (e) => {
+    e.preventDefault()
     for(let i = 0; i < formInputs.length; i++) {
         if(formInputs[i].value === "" || formInputs[i].value === null) {
-            e.preventDefault()
             formInputs[i].style.borderBottom = "2px solid #FF0000"
             formInputs[i].classList.add("ph-error")
             formInputs[i].nextElementSibling.innerHTML = "<small>Required</small>"
